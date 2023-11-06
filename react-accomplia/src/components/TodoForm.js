@@ -31,7 +31,7 @@ function TodoForm (props) {
     <form className='todo-form' onSubmit = {handleSubmit}>
       <input
         type ='text'
-        placeholder ='todo'
+        placeholder ='eg. study biology for 15 mins'
         value = {input}
         name ='text'
         className ='todo-input'

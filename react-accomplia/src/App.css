@@ -1,7 +1,49 @@
 * {
-    line-height: 1.0714285714;
-    font-weight: 600;
-    letter-spacing: -0.005em;
-    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
-    text-align: center;
+  line-height: 1.0714285714;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  text-align: center;
+  color: azure;
+}
+
+body {
+  min-height: 83vh;
+  background-image: linear-gradient(100deg, #7e65b0, #210344);
+}
+
+#app-title {
+  font-size: 70px;
+  margin-top: 150px;
+}
+
+.todo-input-container {
+  display: inline-block;
+}
+
+.todo-input {
+  background-color: black;
+  width: 185px;
+  text-align: left;
+  padding: 5px;
+  transition: width 0.3s;
+}
+
+.todo-input:hover,
+.todo-input:focus {
+  width: 300px;
+}
+
+.todo-input:hover, .todo-input:focus::placeholder {
+  color: transparent;
+}
+
+.todo-button {
+  color:black;
+  width: 80px;
+  padding: 8px;
+  border-radius: 0% 10% 10% 0%;
+  border: none;
+  background-color: whitesmoke;
 }

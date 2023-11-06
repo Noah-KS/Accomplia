@@ -5,8 +5,7 @@ import TodoList from './components/TodoList'
 function App () {
   return (
     <div className='todo-app'>
-      <h1 id = "app=title">Accomplia</h1>
-      <h2>Task Log</h2>
+      <h1 id = "app-title">Accomplia</h1>
       <TodoList></TodoList>
     </div>
   )
