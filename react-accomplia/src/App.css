@@ -1,49 +1,88 @@
 * {
-  line-height: 1.0714285714;
-  font-weight: 600;
-  letter-spacing: -0.005em;
-  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
-    sans-serif;
-  text-align: center;
-  color: azure;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', sans-serif;
 }
 
 body {
-  min-height: 83vh;
-  background-image: linear-gradient(100deg, #7e65b0, #210344);
+  background: #2d2c41;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px; /* Added padding for overall spacing */
 }
 
-#app-title {
-  font-size: 70px;
-  margin-top: 150px;
+h1 {
+  font-size: 90px;
+  text-align: center;
+  margin-bottom: 30px; /* Increased vertical spacing */
 }
 
-.todo-input-container {
-  display: inline-block;
+.todo-form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px; /* Increased vertical spacing */
+}
+
+.todo-input, .todo-button {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  font-size: 16px;
 }
 
 .todo-input {
-  background-color: black;
-  width: 185px;
-  text-align: left;
-  padding: 5px;
-  transition: width 0.3s;
+  width: 400px;
+  background: #3e3d52;
+  color: #fff;
+  margin-right: 10px;
 }
 
-.todo-input:hover,
+.todo-input::placeholder {
+  color: #b3b3b3;
+}
+
 .todo-input:focus {
-  width: 300px;
-}
-
-.todo-input:hover, .todo-input:focus::placeholder {
-  color: transparent;
+  background: #47465a;
 }
 
 .todo-button {
-  color:black;
-  width: 80px;
-  padding: 8px;
-  border-radius: 0% 10% 10% 0%;
-  border: none;
-  background-color: whitesmoke;
+  background: #564f80;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.todo-button:hover {
+  background: #4d4772;
+}
+
+.todo-container {
+  width: 100%;
+  text-align: center;
+}
+
+.todo-row {
+  background: #1b1a31; /* Dark blue background for all tasks */
+  margin: 12px 0;
+  padding: 16px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 4px solid #d35400; /* Dark orange left border */
+}
+
+.icons {
+  margin-left: 10px;
+  font-size: 24px;
+}
+
+.delete-icon:hover, .edit-icon:hover {
+  color: #e0e0e0;
 }

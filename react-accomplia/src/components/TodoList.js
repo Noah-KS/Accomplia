@@ -45,7 +45,6 @@ const updateTodo = (todoId, newValue) => {
     <div className = 'hover-area'>
         <TodoForm onSubmit = {addTodo}></TodoForm>
         </div>
-        <h2>Task Log</h2>
         <Todo todos = {todos} completeTodo={completeTodo} removeTodo={removeTodo} updateTodo = {updateTodo} />
     </div>
   )
