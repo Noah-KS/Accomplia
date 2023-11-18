@@ -11,7 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; /* to align items from the start */
   min-height: 100vh;
   padding: 20px; /* Added padding for overall spacing */
 }
