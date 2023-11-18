@@ -35,6 +35,7 @@ function TodoForm (props) {
         value = {input}
         name ='text'
         className ='todo-input'
+        autoComplete="off"
         onChange = {handleChange}
         ref={inputRef}
       ></input>
